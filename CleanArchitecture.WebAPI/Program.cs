@@ -1,18 +1,17 @@
-using CleanArchitecture.Application;
+using CleanArchitecture.Application.Queries;
+using CleanArchitecture.Application.Commands;
+using CleanArchitecture.Infrastructure.Queries;
+using CleanArchitecture.Infrastructure.Commands;
 using CleanArchitecture.Application.Commands.BrokerManager;
-using CleanArchitecture.Domain.Data;
-using Microsoft.DotNet.Scaffolding.Shared;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddDbContext<PostContext>(options =>
-     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddApplicationCommandServices(builder.Configuration);
 builder.Services.AddApplicationQueryServices(builder.Configuration);
+
+builder.Services.AddInfrastructureCommandServices(builder.Configuration);
+builder.Services.AddInfrastructureQueryServices(builder.Configuration);
 
 var provider = builder.Services.BuildServiceProvider();
 

@@ -1,6 +1,6 @@
 ﻿using CleanArchitecture.Domain.Entities;
 
-namespace CleanArchitecture.Infrastructure.Queries.IRepositories
+namespace CleanArchitecture.Application.Common.IRepositories.Queries
 {
     public interface IPostsRepository
     {

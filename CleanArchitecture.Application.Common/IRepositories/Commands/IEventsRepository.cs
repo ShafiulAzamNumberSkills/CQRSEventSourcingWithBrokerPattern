@@ -1,7 +1,7 @@
 ﻿using CleanArchitecture.Domain.Entities;
 using CleanArchitecture.Domain.EventStore.Entities;
 
-namespace CleanArchitecture.Infrastructure.Commands.IRepositories
+namespace CleanArchitecture.Application.Common.IRepositories.Commands
 {
     public interface IEventsRepository
     {

@@ -2,7 +2,7 @@
 using CleanArchitecture.Domain.Entities;
 
 
-namespace CleanArchitecture.Domain.Data
+namespace CleanArchitecture.Infrastructure.Common.Data
 {
     public class PostContext : DbContext
     {

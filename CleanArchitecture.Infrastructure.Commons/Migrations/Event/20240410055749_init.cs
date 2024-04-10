@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CleanArchitecture.Domain.Migrations.Event
+namespace CleanArchitecture.Infrastructure.Common.Migrations.Event
 {
     /// <inheritdoc />
     public partial class init : Migration
@@ -18,7 +19,9 @@ namespace CleanArchitecture.Domain.Migrations.Event
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AggregateId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DataJson = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DataType = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    DataType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EventTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsCompleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

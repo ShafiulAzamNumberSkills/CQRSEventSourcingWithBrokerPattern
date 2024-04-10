@@ -2,7 +2,7 @@
 using CleanArchitecture.Domain.EventStore.Entities;
 
 
-namespace CleanArchitecture.Domain.Data
+namespace CleanArchitecture.Infrastructure.Common.Data.EventStore
 {
     public class EventContext : DbContext
     {

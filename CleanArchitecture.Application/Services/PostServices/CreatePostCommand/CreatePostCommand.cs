@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using CleanArchitecture.Application.Commands.BrokerManager;
 using CleanArchitecture.Application.Commands.Events.PostEvents.CreatePostEvent;
+using CleanArchitecture.Application.Common.IRepositories.Commands;
 using CleanArchitecture.Domain.EventStore.Entities;
 using CleanArchitecture.Domain.ViewModels;
-using CleanArchitecture.Infrastructure.Commands.IRepositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;

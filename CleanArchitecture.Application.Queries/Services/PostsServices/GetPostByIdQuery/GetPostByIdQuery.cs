@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using CleanArchitecture.Application.Common.IRepositories.Queries;
 using CleanArchitecture.Domain.ViewModels;
-using CleanArchitecture.Infrastructure.Queries.IRepositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;

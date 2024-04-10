@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Domain.Data;
+﻿using CleanArchitecture.Application.Common.IRepositories.Commands;
 using CleanArchitecture.Domain.EventStore.Entities;
-using CleanArchitecture.Infrastructure.Commands.IRepositories;
+using CleanArchitecture.Infrastructure.Common.Data.EventStore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.Infrastructure.Commands.Repositories

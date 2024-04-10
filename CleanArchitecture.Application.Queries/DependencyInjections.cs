@@ -1,10 +1,9 @@
-﻿using CleanArchitecture.Infrastructure.Queries;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 
-namespace CleanArchitecture.Application
+namespace CleanArchitecture.Application.Queries
 { 
     public static class DependencyInjections
     {
@@ -21,8 +20,6 @@ namespace CleanArchitecture.Application
                 cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
             });
             //
-
-            services.AddInfrastructureQueryServices(configuration);
 
 
             return services;

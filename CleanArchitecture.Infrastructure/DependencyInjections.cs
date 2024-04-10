@@ -1,13 +1,14 @@
-﻿using CleanArchitecture.Domain.Data;
-using CleanArchitecture.Infrastructure.Commands.IRepositories;
+﻿using CleanArchitecture.Application.Common.IRepositories.Commands;
 using CleanArchitecture.Infrastructure.Commands.Repositories;
+using CleanArchitecture.Infrastructure.Common.Data;
+using CleanArchitecture.Infrastructure.Common.Data.EventStore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 
 namespace CleanArchitecture.Infrastructure.Commands
-{ 
+{
     public static class DependencyInjections
     {
 

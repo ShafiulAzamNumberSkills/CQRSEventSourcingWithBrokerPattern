@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using CleanArchitecture.Application.Commands.BrokerManager;
+using CleanArchitecture.Application.Common.IRepositories.Commands;
 using CleanArchitecture.Application.Events.PostEvents.EditPostEvent;
 using CleanArchitecture.Domain.EventStore.Entities;
 using CleanArchitecture.Domain.ViewModels;
-using CleanArchitecture.Infrastructure.Commands.IRepositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -21,13 +21,13 @@ namespace CleanArchitecture.Application.Commands.Services.PostServices.EditPostC
     {
         private readonly IBrokerManager _brokerManager;
         private readonly IEventsRepository _eventRepository;
-        private readonly Infrastructure.Queries.IRepositories.IPostsRepository _postsQueryRepository;
+        private readonly Common.IRepositories.Queries.IPostsRepository _postsQueryRepository;
         private readonly ILogger<EditPostCommandHandler> _logger;
         private readonly IMapper _mapper;
 
         public EditPostCommandHandler(IBrokerManager brokerManager,
                                       IEventsRepository eventRepository,
-                                      Infrastructure.Queries.IRepositories.IPostsRepository postsQueryRepository,
+                                      Common.IRepositories.Queries.IPostsRepository postsQueryRepository,
                                       ILogger<EditPostCommandHandler> logger,
                                       IMapper mapper)
         {

@@ -9,11 +9,13 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.Infrastructure.Queries\CleanArchitecture.Infrastructure.Queries.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Application.Common\CleanArchitecture.Application.Common.csproj" />
   </ItemGroup>
 
 </Project>

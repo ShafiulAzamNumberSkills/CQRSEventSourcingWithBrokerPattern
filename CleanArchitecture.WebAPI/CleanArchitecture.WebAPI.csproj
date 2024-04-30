@@ -24,11 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CleanArchitecture.Application.Commands\CleanArchitecture.Application.Commands.csproj" />
     <ProjectReference Include="..\CleanArchitecture.Application.Queries\CleanArchitecture.Application.Queries.csproj" />
-    <ProjectReference Include="..\CleanArchitecture.Application\CleanArchitecture.Application.Commands.csproj" />
-    <ProjectReference Include="..\CleanArchitecture.Infrastructure.Commons\CleanArchitecture.Infrastructure.Common.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Infrastructure.Commands\CleanArchitecture.Infrastructure.Commands.csproj" />
     <ProjectReference Include="..\CleanArchitecture.Infrastructure.Queries\CleanArchitecture.Infrastructure.Queries.csproj" />
-    <ProjectReference Include="..\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.Commands.csproj" />
   </ItemGroup>
 
 </Project>

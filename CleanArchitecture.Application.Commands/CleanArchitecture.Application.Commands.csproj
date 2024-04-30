@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.Application.Common\CleanArchitecture.Application.Common.csproj" />
+    <ProjectReference Include="..\CleanArchitecture.Application.Commons\CleanArchitecture.Application.Common.csproj" />
   </ItemGroup>
 
 </Project>
